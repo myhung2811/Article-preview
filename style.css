@@ -1,0 +1,117 @@
+@import url(https://fonts.google.com/specimen/Manrope);
+@import url(https://fontawesome.com);
+@import url(https://icomoon.io);
+@import url(https://ionicons.com);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+html{
+    background-color: hsl(212, 23%, 69%);
+}
+
+.container{
+    background-color: hsl(210, 25%, 97%);
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65rem;
+    height: 22rem;
+    border-radius: 10px;
+}
+
+.pic-left {
+    height: 22rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.content .line1{
+    font-size: 27px;
+    font-weight: 700;
+    margin: 20px 32px;
+}
+
+.content .line2{
+    margin: 20px 32px;
+    line-height: 22px;
+    font-family: 'Manrope', 'sans-serif';
+    color: hsl(212, 23%, 69%);
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    margin: 25px 32px;
+}
+
+.footer .logo{
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+}
+
+.footer .bg{
+    margin: auto 15px;
+    line-height: 26px;
+    width: 135px;
+}
+
+.footer .bg .name{
+    font-weight: 700;
+    width: 140px;
+}
+
+.footer .bg .day{
+    color:hsl(212, 23%, 69%);
+}
+
+.share{
+    margin-left: 12rem;
+    background-color:hsl(212, 23%, 69%);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.share:hover{
+    background-color: hsl(217, 19%, 35%);
+    cursor: pointer;
+}
+
+.share .icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 11px 13px;
+}
+
+.show.active{
+    background-color:hsl(217, 19%, 35%);
+    display: inline-flex;
+    padding: 10px 18px;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 31rem;
+    margin-left: 86rem;
+}
+
+.show{
+    display:none;
+}
+
+.show h2{
+    margin-right: 10px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+.show img{
+    margin-right: 10px;
+}

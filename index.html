@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <title>Article Preview Component Master</title>
+</head>
+<body>
+    <div class="container">
+      <img src="images/drawers.jpg" class="pic-left">
+
+      <div class="content">
+        <p class="line1">Shift the overall look and feel by adding these wonderful touches to 
+        furniture in your home</p>
+
+        <p class="line2">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare 
+        and uninviting. I've got some simple tips to help you make any room feel complete.</p>
+
+
+        <div class="footer">
+          <img src="images/avatar-michelle.jpg" class="logo">
+          <div class="bg">
+            <p class="name">Michelle Appleton</p>
+            <p class="day">28 Jun 2020</p>
+          </div>
+  
+          <div class="share">
+            <img src="images/icon-share.svg" class="icon">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="show">
+      <h2>SHARE</h2>
+      <img src="images/icon-facebook.svg">
+      <img src="images/icon-twitter.svg">
+      <img src="images/icon-pinterest.svg">
+    </div>
+
+      
+
+    <script>
+      const btn = document.querySelector('.icon');
+      const show = document.querySelector('.show');
+
+      btn.addEventListener('click',()=>{
+        if(!show.classList.contains('active')){
+          show.classList.add('active');
+        }else show.classList.remove('active');
+      })
+    </script>
+</body>
+</html>
